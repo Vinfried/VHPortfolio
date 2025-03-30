@@ -146,7 +146,10 @@ function initializeTabs() {
             
             // Show corresponding panel
             const tabId = btn.dataset.tab;
-            q(`#${tabId}`).classList.add('active');
+            const panel = q(`#${tabId}`);
+            if (panel) {
+                panel.classList.add('active');
+            }
         });
     });
 }
@@ -375,7 +378,28 @@ function initializeProjectModals() {
                     <a href="#gameplay" class="btn btn-secondary">Watch Demo</a>
                 </div>
             `,
-            // Additional project details would be defined here
+            'project3': `
+                <div class="project-detail-images">
+                    <img src="assets/images/project3-detail1.jpg" alt="Custom Game Engine - Detail 1">
+                </div>
+                <h3>Project Overview</h3>
+                <p>A lightweight 2D game engine built from scratch using C++ and SDL2. The engine features a component-based architecture, a custom renderer, and basic physics.</p>
+                <h3>Technical Highlights</h3>
+                <ul>
+                    <li>Implemented entity-component system for game object management</li>
+                    <li>Developed a custom renderer with sprite batching for performance</li>
+                    <li>Created a collision detection system for 2D shapes</li>
+                    <li>Built a simple asset management system</li>
+                </ul>
+                <h3>Development Challenges</h3>
+                <p>The biggest challenge was designing a flexible architecture that allows easy extension while maintaining performance. The component system was key to solving this issue.</p>
+                <h3>Technologies Used</h3>
+                <p>C++, SDL2, OpenGL, ImGui for debugging tools</p>
+                <div class="project-links">
+                    <a href="https://github.com/Vinfried/SimpleGameEngine" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Code</a>
+                    <a href="#gameplay" class="btn btn-secondary">Watch Demo</a>
+                </div>
+            `
         };
         
         return projectDetails[projectId] || '<p>Project details not available.</p>';
