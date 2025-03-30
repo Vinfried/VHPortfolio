@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Victor Hugo - Game Developer & Programmer Portfolio showcasing gameplay mechanics, AI systems, and technical skills">
+    <title>Victor Hugo | Game Developer & Programmer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Preload hero image for performance -->
+    <link rel="preload" as="image" href="assets/images/hero-bg.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Victor Hugo | Game Developer & Programmer">
+    <meta property="og:description" content="Game Developer specializing in gameplay mechanics, AI systems, and clean code implementation">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://vinfried.github.io/VHPortfolio/">
+</head>
+<body>
+    <!-- Skip navigation for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with navigation -->
+    <header class="site-header" id="top">
+        <div class="container">
+            <div class="logo">
+                <a href="#top" aria-label="Victor Hugo">VH</a>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="menu-items">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul id="menu-items" class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#gameplay">Gameplay</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle" aria-label="Toggle dark/light mode">
+                            <span class="mode-icon light-icon" aria-hidden="true">☀️</span>
+                            <span class="mode-icon dark-icon" aria-hidden="true">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Victor Hugo</h1>
+                    <p class="hero-subtitle">Game Developer & Programmer</p>
+                    <p class="hero-description">
+                        Specializing in gameplay mechanics, AI systems, and clean code implementation
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/images/profile.jpg" alt="Victor Hugo - Game Developer" width="300" height="300">
+                    </div>
+                    <div class="about-text">
+                        <p class="highlight-text">
+                            Passionate game developer with a strong foundation in C# and C++ programming, dedicated to creating engaging gameplay experiences with high-quality code.
+                        </p>
+                        <p>
+                            With a bachelor's degree in Games Programming, I specialize in developing interactive systems using Unreal Engine and Unity. My expertise lies in gameplay mechanics, AI behaviors, and optimization techniques that enhance player experience.
+                        </p>
+                        <p>
+                            I'm constantly expanding my skills and knowledge to keep up with the latest industry standards and technologies. My goal is to contribute to innovative game projects that push the boundaries of interactive entertainment.
+                        </p>
+                        <div class="about-links">
+                            <a href="assets/docs/VictorHugo_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                            <a href="https://github.com/Vinfried" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                                <svg class="icon github-icon" aria-hidden="true" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vhs96/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <svg class="icon linkedin-icon" aria-hidden="true" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="unreal">Unreal</button>
+                    <button class="filter-btn" data-filter="unity">Unity</button>
+                    <button class="filter-btn" data-filter="cpp">C++</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card" data-category="unreal cpp">
+                        <div class="project-preview">
+                            <img src="assets/images/project1.jpg" alt="AI Enemy Behavior System" loading="lazy" width="600" height="340">
+                            <div class="project-links">
+                                <a href="#project1-modal" class="btn btn-small project-details-trigger" aria-label="View AI Enemy Behavior System Details">Details</a>
+                                <a href="https://github.com/Vinfried/EnemyAI" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                                <a href="#gameplay" class="btn btn-small">Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">AI Enemy Behavior System</h3>
+                            <p class="project-description">An advanced finite state machine for enemy AI with perception, patrolling, and combat behaviors.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Unreal Engine 5</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Blueprints</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card" data-category="unity">
+                        <div class="project-preview">
+                            <img src="assets/images/project2.jpg" alt="Procedural Level Generator" loading="lazy" width="600" height="340">
+                            <div class="project-links">
+                                <a href="#project2-modal" class="btn btn-small project-details-trigger" aria-label="View Procedural Level Generator Details">Details</a>
+                                <a href="https://github.com/Vinfried/ProceduralGenerator" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                                <a href="#gameplay" class="btn btn-small">Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Procedural Level Generator</h3>
+                            <p class="project-description">A system that generates randomized dungeon levels with connected rooms and enemy placement.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Unity</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">Shader Graph</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card" data-category="cpp">
+                        <div class="project-preview">
+                            <img src="assets/images/project3.jpg" alt="Custom Game Engine" loading="lazy" width="600" height="340">
+                            <div class="project-links">
+                                <a href="#project3-modal" class="btn btn-small project-details-trigger" aria-label="View Custom Game Engine Details">Details</a>
+                                <a href="https://github.com/Vinfried/SimpleGameEngine" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                                <a href="#gameplay" class="btn btn-small">Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Custom Game Engine</h3>
+                            <p class="project-description">A lightweight 2D game engine built from scratch with a simple entity component system.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">OpenGL</span>
+                                <span class="tech-tag">SDL2</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 4 -->
+                    <article class="project-card" data-category="unity">
+                        <div class="project-preview">
+                            <img src="assets/images/project4.jpg" alt="Combat System" loading="lazy" width="600" height="340">
+                            <div class="project-links">
+                                <a href="#project4-modal" class="btn btn-small project-details-trigger" aria-label="View Combat System Details">Details</a>
+                                <a href="https://github.com/Vinfried/CombatSystem" class="btn btn-small" target="_blank" rel="noopener noreferrer">Code</a>
+                                <a href="#gameplay" class="btn btn-small">Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Combat System</h3>
+                            <p class="project-description">A modular combat system with combo attacks, hitboxes, and damage calculation.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Unity</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">Animation Rigging</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3 class="category-title">Game Engines</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Unreal Engine</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 90%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Unity</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 85%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Custom Engines</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 70%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">Programming</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 85%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">C#</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 90%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Blueprint Visual Scripting</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 95%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Shader Programming</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 75%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">Specializations</h3>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">AI Systems</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 90%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Game Mechanics</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 95%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Procedural Generation</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 80%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Physics & Collision</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 85%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gameplay Demos section -->
+        <section id="gameplay" class="gameplay-section">
+            <div class="container">
+                <h2 class="section-title">Gameplay Demos</h2>
+                <p class="section-description">
+                    See my projects in action with these gameplay demonstrations. Each video showcases the mechanics, AI behaviors, and systems I've implemented.
+                </p>
+                
+                <div class="demo-tabs">
+                    <button class="tab-btn active" data-tab="ai-demo">AI System</button>
+                    <button class="tab-btn" data-tab="procedural-demo">Procedural Generation</button>
+                    <button class="tab-btn" data-tab="engine-demo">Custom Engine</button>
+                    <button class="tab-btn" data-tab="combat-demo">Combat System</button>
+                </div>
+                
+                <div class="demo-content">
+                    <!-- AI Demo Tab -->
+                    <div class="tab-panel active" id="ai-demo">
+                        <div class="video-container">
+                            <!-- Video placeholder - would be replaced with actual video in production -->
+                            <div class="video-placeholder" aria-label="AI System Gameplay Demo">
+                                <img src="assets/images/ai-demo-thumb.jpg" alt="AI System Demo Thumbnail" width="800" height="450">
+                                <button class="play-btn" aria-label="Play AI System Demo Video">▶</button>
+                            </div>
+                        </div>
+                        <div class="demo-description">
+                            <h3>Advanced Enemy AI Behavior</h3>
+                            <p>
+                                This system uses a finite state machine with perception components to create intelligent enemy behaviors. 
+                                Enemies can patrol areas, investigate sounds, and engage in combat with varying tactics based on their type and health status.
+                            </p>
+                            <div class="code-snippet">
+                                <pre><code>// Enemy AI State Machine implementation
+void AEnemyCharacter::UpdateAIState()
+{
+    // Determine current state based on perception and health
+    float currentHealth = GetCurrentHealth();
+    bool playerDetected = PerceptionComponent->IsPlayerDetected();
+    
+    if (currentHealth < lowHealthThreshold) {
+        // When low on health, switch to defensive behavior
+        SetCurrentState(EAIState::Defensive);
+        ExecuteDefensiveManeuvers();
+    }
+    else if (playerDetected) {
+        // When player is detected, engage based on distance
+        float distanceToPlayer = CalculateDistanceToPlayer();
+        
+        if (distanceToPlayer < meleeRange) {
+            SetCurrentState(EAIState::MeleeAttack);
+            ExecuteMeleeAttack();
+        }
+        else if (distanceToPlayer < rangedAttackRange) {
+            SetCurrentState(EAIState::RangedAttack);
+            ExecuteRangedAttack();
+        }
+        else {
+            SetCurrentState(EAIState::Pursuit);
+            ExecutePursuit();
+        }
+    }
+    else if (CurrentState != EAIState::Patrol) {
+        // Return to patrol when player is lost
+        SetCurrentState(EAIState::Patrol);
+        RestartPatrolPath();
+    }
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Procedural Generation Demo Tab -->
+                    <div class="tab-panel" id="procedural-demo">
+                        <div class="video-container">
+                            <!-- Video placeholder -->
+                            <div class="video-placeholder" aria-label="Procedural Generation Gameplay Demo">
+                                <img src="assets/images/procedural-demo-thumb.jpg" alt="Procedural Generation Demo Thumbnail" width="800" height="450">
+                                <button class="play-btn" aria-label="Play Procedural Generation Demo Video">▶</button>
+                            </div>
+                        </div>
+                        <div class="demo-description">
+                            <h3>Procedural Dungeon Generator</h3>
+                            <p>
+                                This system generates randomized dungeon layouts with connected rooms, ensuring playability and interesting level design. 
+                                It includes algorithms for room placement, corridor generation, and strategic enemy and item placement.
+                            </p>
+                            <div class="code-snippet">
+                                <pre><code>// Procedural level generation using room templates and connection algorithms
+public class DungeonGenerator : MonoBehaviour
+{
+    // Configure dungeon parameters
+    [SerializeField] private int minRooms = 5;
+    [SerializeField] private int maxRooms = 10;
+    [SerializeField] private float roomSpacing = 20f;
+    [SerializeField] private GameObject[] roomPrefabs;
+    
+    private List&lt;Room&gt; placedRooms = new List&lt;Room&gt;();
+    
+    public void GenerateDungeon()
+    {
+        ClearExistingDungeon();
+        
+        // Determine random number of rooms for this dungeon
+        int roomCount = Random.Range(minRooms, maxRooms + 1);
+        
+        // Place entrance room
+        Room entranceRoom = PlaceRoom(Vector2Int.zero, RoomType.Entrance);
+        placedRooms.Add(entranceRoom);
+        
+        // Place main path rooms leading to boss
+        List&lt;Room&gt; mainPathRooms = GenerateMainPath(entranceRoom, roomCount / 2);
+        
+        // Place side rooms branching from main path
+        int sideRoomsCount = roomCount - mainPathRooms.Count - 1;
+        GenerateSideRooms(mainPathRooms, sideRoomsCount);
+        
+        // Place boss room at the end of main path
+        Room bossRoom = PlaceRoom(GetFarthestRoomPosition(), RoomType.Boss);
+        placedRooms.Add(bossRoom);
+        
+        // Connect all rooms with corridors
+        ConnectRoomsWithCorridors();
+        
+        // Populate rooms with enemies and items
+        PopulateRooms();
+    }
+    
+    // Additional generation methods...
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Custom Engine Demo Tab -->
+                    <div class="tab-panel" id="engine-demo">
+                        <div class="video-container">
+                            <!-- Video placeholder -->
+                            <div class="video-placeholder" aria-label="Custom Engine Gameplay Demo">
+                                <img src="assets/images/engine-demo-thumb.jpg" alt="Custom Engine Demo Thumbnail" width="800" height="450">
+                                <button class="play-btn" aria-label="Play Custom Engine Demo Video">▶</button>
+                            </div>
+                        </div>
+                        <div class="demo-description">
+                            <h3>Custom 2D Game Engine</h3>
+                            <p>
+                                A lightweight engine built from scratch using C++ and SDL2, featuring a simple entity-component system, 
+                                collision detection, and basic rendering capabilities. The demo shows a simple platformer game built with the engine.
+                            </p>
+                            <div class="code-snippet">
+                                <pre><code>// Entity Component System implementation in custom engine
+class Entity
+{
+private:
+    std::unordered_map&lt;std::type_index, std::unique_ptr&lt;Component&gt;&gt; components;
+    bool active = true;
+    EntityID id;
+
+public:
+    Entity(EntityID entityId) : id(entityId) {}
+    
+    template&lt;typename T, typename... Args&gt;
+    T* AddComponent(Args&&... args)
+    {
+        std::type_index typeId = std::type_index(typeid(T));
+        
+        // Ensure component doesn't already exist
+        if (components.find(typeId) != components.end()) {
+            return static_cast&lt;T*&gt;(components[typeId].get());
+        }
+        
+        // Create and store new component
+        auto component = std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...);
+        T* componentPtr = component.get();
+        
+        // Initialize component and add to map
+        componentPtr->entity = this;
+        componentPtr->Initialize();
+        components[typeId] = std::move(component);
+        
+        return componentPtr;
+    }
+    
+    template&lt;typename T&gt;
+    T* GetComponent()
+    {
+        std::type_index typeId = std::type_index(typeid(T));
+        auto it = components.find(typeId);
+        
+        if (it != components.end()) {
+            return static_cast&lt;T*&gt;(it->second.get());
+        }
+        
+        return nullptr;
+    }
+    
+    // Additional entity functionality...
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Combat System Demo Tab -->
+                    <div class="tab-panel" id="combat-demo">
+                        <div class="video-container">
+                            <!-- Video placeholder -->
+                            <div class="video-placeholder" aria-label="Combat System Gameplay Demo">
+                                <img src="assets/images/combat-demo-thumb.jpg" alt="Combat System Demo Thumbnail" width="800" height="450">
+                                <button class="play-btn" aria-label="Play Combat System Demo Video">▶</button>
+                            </div>
+                        </div>
+                        <div class="demo-description">
+                            <h3>Modular Combat System</h3>
+                            <p>
+                                A flexible combat system with combo attacks, hitboxes, and damage calculation. 
+                                Features include weapon switching, different attack types, and visual effects for impact feedback.
+                            </p>
+                            <div class="code-snippet">
+                                <pre><code>// Combat system with combo management and hitbox detection
+public class CombatSystem : MonoBehaviour
+{
+    [SerializeField] private float comboTimeWindow = 1.0f;
+    [SerializeField] private Attack[] comboAttacks;
+    
+    private int currentComboIndex = 0;
+    private float lastAttackTime = 0f;
+    private Animator animator;
+    private CharacterController controller;
+    
+    private void Start()
+    {
+        animator = GetComponent&lt;Animator&gt;();
+        controller = GetComponent&lt;CharacterController&gt;();
+    }
+    
+    public void TryAttack()
+    {
+        // Check if we're already attacking
+        if (animator.GetBool("IsAttacking")) {
+            // Queue next attack in combo
+            animator.SetBool("ComboRequested", true);
+            return;
+        }
+        
+        // Check if combo has expired
+        if (Time.time - lastAttackTime > comboTimeWindow) {
+            // Reset combo
+            currentComboIndex = 0;
+        }
+        
+        // Execute current attack in combo
+        ExecuteAttack(comboAttacks[currentComboIndex]);
+        
+        // Update attack time
+        lastAttackTime = Time.time;
+    }
+    
+    private void ExecuteAttack(Attack attack)
+    {
+        // Trigger animation
+        animator.SetTrigger(attack.animationTrigger);
+        animator.SetBool("IsAttacking", true);
+        
+        // Apply movement if attack has movement
+        if (attack.hasMovement) {
+            StartCoroutine(ApplyAttackMovement(attack));
+        }
+        
+        // Activate hitbox with delay
+        StartCoroutine(ActivateHitbox(attack.hitboxDelay, attack.hitboxDuration, attack.damage));
+    }
+    
+    // Additional combat methods...
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out for collaboration opportunities, job inquiries, or just to say hello!</p>
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <a href="mailto:vhmos1209@gmail.com">vhmos1209@gmail.com</a>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">🔗</span>
+                                <a href="https://www.linkedin.com/in/vhs96/" target="_blank" rel="noopener noreferrer">linkedin.com/in/vhs96</a>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">💻</span>
+                                <a href="https://github.com/Vinfried" target="_blank" rel="noopener noreferrer">github.com/Vinfried</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required aria-required="true">
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#top" aria-label="Back to top">VH</a>
+                </div>
+                <p class="footer-text">&copy; 2024 Victor Hugo. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project detail modals (would be shown/hidden via JavaScript) -->
+    <div id="project1-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="project1-title">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h2 id="project1-title">AI Enemy Behavior System</h2>
+            <div class="modal-body">
+                <!-- Modal content added via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <span class="arrow-up" aria-hidden="true">↑</span>
+    </a>
+
+    <!-- Notification for form submission (hidden by default) -->
+    <div class="notification" aria-live="assertive" aria-hidden="true">
+        <p class="notification-message"></p>
+        <button class="notification-close" aria-label="Close notification">&times;</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
