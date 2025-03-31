@@ -1121,7 +1121,10 @@ section {
     }
 }
 
-/* Fade-in Animation for Hero Title */
+/* ===========================
+   Animations
+=========================== */
+
 .fade-in {
   opacity: 0;
   transform: translateY(10px);
