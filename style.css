@@ -1120,3 +1120,18 @@ section {
         text-align: center;
     }
 }
+
+/* Fade-in Animation for Hero Title */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
