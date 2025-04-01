@@ -421,3 +421,16 @@ window.addEventListener('load', () => {
         observer.observe(skill);
     });
 });
+
+// Scroll to Top Button Behavior
+const backToTopBtn = document.querySelector('.back-to-top');
+
+if (backToTopBtn) {
+  backToTopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
