@@ -1,0 +1,101 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+name: Portfolio Website Setup  
+version: 1.5.0  
+description: Optimized Cursor ruleset for building and scaling a polished, responsive portfolio website focused on game mechanics and AI programming using Unreal Engine, HTML/CSS/JS, and GitHub Pages.
+
+rulesets:
+  - name: Game Dev Portfolio Front-End Ruleset
+    description: Guide Cursor AI to create and maintain a portfolio site focused on gameplay mechanics and AI in Unreal Engine.
+    rules:
+      - You are an expert front-end developer and game programmer assistant.
+      - This project is a personal portfolio website hosted via GitHub Pages.
+      - Use clean, semantic HTML5 and modular CSS (Flexbox or Grid preferred).
+      - Use vanilla JavaScript (ES6+) for interactive behaviors.
+      - Avoid external frameworks/libraries unless explicitly requested (no Bootstrap, Tailwind, jQuery, etc.).
+      - Do not generate placeholder or incomplete code blocks—output full, valid, tested snippets only.
+      - All pages must be responsive and accessible (WCAG 2.1 AA minimum).
+      - When generating or editing content, follow the existing style and structure of index.html, style.css, and scripts.js.
+      - Use kebab-case for CSS classes and camelCase for JS variables/functions.
+      - Insert meaningful comments explaining logic and structure.
+      - Project file structure must include: index.html, style.css, scripts.js, and an assets/ folder for images, video thumbnails, or downloadable builds.
+      - When adding content or features (e.g. blog post, video gallery), outline a plan first and confirm before writing code.
+      - When editing existing files, review for polish: smooth transitions, hover feedback, animation timing.
+      - Showcase mechanics and game-feel work clearly. Prioritize sections like Projects, AI Demos, Mechanics Showcases, and Contact.
+      - Optimize for performance and maintainability.
+      - Avoid any use of deprecated HTML/CSS practices.
+      - Treat each page and feature as scalable and expandable for future edits.
+      - If working on Jekyll or Markdown, use proper Liquid syntax and YAML front matter.
+      - Never suggest content that doesn’t fit the theme of gameplay/AI programming portfolios.
+      - Before generating new files or functions, check for existing ones with similar names or purposes.
+      - Do not duplicate styles, IDs, class names, or functions. Reuse and reference existing code when possible.
+      - If a similar function or layout block already exists, improve or expand it instead of recreating.
+      - Always verify filenames and structure before creating new files.
+
+      # GitHub Actions / Deployment
+      - When creating or modifying GitHub Actions workflows:
+        - Always use the latest stable versions of official actions (e.g., actions/upload-artifact@v3).
+        - Refer to GitHub Marketplace to check for correct and up-to-date syntax.
+        - Validate all .yml files for errors before committing.
+        - Ensure workflows are compatible with GitHub Pages deployment.
+        - Prefer peaceiris/actions-gh-pages@v3 for deploying static content.
+        - Use correct environment variables (e.g., GITHUB_TOKEN) and proper publish_dir targeting the site’s output folder.
+
+      # Visuals / Animation Controls
+      - Do not generate animations (e.g., glitch text, complex CSS effects) unless specifically requested or part of existing design.
+      - If an animation is added, include the full required CSS/JS and test for fallback support.
+      - Avoid "clever" visual effects that lack support or distract from core content.
+      - Avoid generating unnecessary abstractions (e.g., wrapper functions for simple behavior).
+      - Do not invent new components or layout patterns unless explicitly asked.
+      - Favor simplicity, clarity, and maintainability over novelty.
+      - Do not use undefined CSS classes like .glitch-text. If present in index.html, remove or replace them with functional alternatives.
+      - For hero section animation, use accessible fade-in or slide-in transitions only. Include working CSS.
+
+files:
+  - path: index.html
+    description: Main HTML file for the portfolio site
+  - path: style.css
+    description: Styling for all layout and visual elements (modular, responsive)
+  - path: scripts.js
+    description: JavaScript behaviors (mobile nav, scroll effects, lightboxes, etc.)
+  - path: assets/
+    description: Folder for images, videos, downloadable builds (ZIPs, PDFs, MP4s)
+  - path: .github/workflows/deploy.yml
+    description: GitHub Actions deployment workflow file for GitHub Pages
+
+readme:
+  content: |
+    # Project: Game Dev Portfolio Website
+
+    ## Overview
+    A responsive, scalable personal portfolio website built with HTML, CSS, and JavaScript, hosted on GitHub Pages. Focused on showcasing work in game mechanics and AI for Unreal Engine projects. Designed for indie/AA studio job applications.
+
+    ## Tech Stack
+    - HTML5
+    - CSS3 (Flexbox/Grid layout)
+    - JavaScript (ES6+)
+    - Optional: Jekyll or Markdown
+    - Deployed via GitHub Pages
+
+    ## Structure
+    - index.html: Home page with hero, about, projects, and contact sections
+    - style.css: Responsive styles and modular layout rules
+    - scripts.js: Light JS interactions (e.g., nav toggle, scroll effects, modal video players)
+    - /assets: Media files like videos, images, resumes, and gameplay demos
+    - .github/workflows/deploy.yml: GitHub Actions file to automate publishing
+
+    ## Coding Principles
+    - No frameworks unless explicitly approved
+    - Accessibility and responsiveness as default
+    - Semantic, maintainable structure
+    - Clear comments and naming conventions
+    - Focused on the feel and polish of game mechanics/AI work
+    - Safe, validated deployment via GitHub Actions
+    - No broken visual gimmicks or animations
+    - Simplicity and clarity over complexity
+
+    ## Goal
+    To showcase a game developer’s strongest skillset—creating polished gameplay mechanics and AI behavior—with a professional, clean portfolio that can grow over time.
